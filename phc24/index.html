@@ -3,34 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WIP</title>
+    <title>Legalscape, Inc.</title>
   </head>
   <body>
     <ul>
       <li>
-        採用情報
-        <a href="https://legalscape.notion.site/09aeb478072946c18249495b8fb63fcd"
-          >https://legalscape.notion.site/09aeb478072946c18249495b8fb63fcd</a
-        >
+        <a href="https://legalscape.notion.site/09aeb478072946c18249495b8fb63fcd" class="btn">
+          <img src="https://kissge.github.io/shared/ls_logo_full.svg" alt="Legalscape, Inc." />
+          Legalscape 採用情報<br />
+          <span class="url" lang="en">legalscape.notion.site/09aeb478072946c18249495b8fb63fcd</span>
+        </a>
       </li>
       <li>
-        今日の資料
-        <a href="https://docs.google.com/presentation/d/1W68U0G-aIRWisXqyC0mV91yDvTLYtO7rcLyscbwTUMM/edit"
-          >https://docs.google.com/presentation/d/1W68U0G-aIRWisXqyC0mV91yDvTLYtO7rcLyscbwTUMM/edit</a
-        >
+        <a href="https://docs.google.com/presentation/d/1W68U0G-aIRWisXqyC0mV91yDvTLYtO7rcLyscbwTUMM/edit" class="btn">
+          <img
+            src="./slide.png"
+            alt="Legalだけでも、Techだけでもダメ——プロダクトの力で法務の「あたりまえ」をアップデートする"
+          />
+          今日のスライド<br />
+          <span class="url" lang="en">
+            docs.google.com/presentation/d/1W68U0G-aIRWisXqyC0mV91yDvTLYtO7rcLyscbwTUMM/edit
+          </span>
+        </a>
       </li>
       <li>
-        城戸 <a href="https://yusuk.eki.do">https://yusuk.eki.do</a> /
-        <a href="https://x.com/p_km">https://x.com/p_km</a>
-      </li>
-      <li>
-        TODO:
-        <ul>
-          <li>デザイン</li>
-          <li>ブース情報？</li>
-          <li>Google Analytics</li>
-        </ul>
+        <img src="https://kissge.github.io/shared/me_b.svg" alt="きど" class="me" />
+        城戸について
+        <table>
+          <tr>
+            <th>HP</th>
+            <td><a href="https://yusuk.eki.do" class="url" lang="en">yusuk.eki.do</a></td>
+          </tr>
+          <tr>
+            <th>𝕏</th>
+            <td><a href="https://x.com/p_km" class="url" lang="en">@p_km</a></td>
+          </tr>
+        </table>
       </li>
     </ul>
+    <style>
+      body {
+        background: #ddd;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 32px;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        display: block;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 32px;
+
+        &:not(:has(.btn)) {
+          padding: 1rem;
+        }
+      }
+
+      a {
+        text-decoration: none;
+
+        &.btn {
+          display: block;
+          padding: 1rem;
+        }
+      }
+
+      .url {
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: monospace;
+        font-size: 0.8em;
+        vertical-align: middle;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto 1rem;
+        max-width: 100%;
+      }
+      .me {
+        max-width: min(100%, 100px);
+      }
+
+      table {
+        margin: 0 auto;
+
+        th {
+          font-weight: normal;
+          padding-right: 0.5em;
+        }
+        td {
+          text-align: left;
+        }
+      }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKM0LRK8M3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        dataLayer.push(arguments);
+      };
+      gtag('js', new Date());
+      gtag('config', 'G-WKM0LRK8M3');
+    </script>
   </body>
 </html>
